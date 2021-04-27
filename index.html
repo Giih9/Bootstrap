@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo Giovanna Galvão</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/gallery.theme.css">
+    <link rel="stylesheet" href="assets/css/gallery.min.css">
+
 </head>
 <body>
     <div class="container">
@@ -20,25 +23,29 @@
         </div>
             <div class="row">
                 <div class="col-6">
-                <section>
-                    <h2>Informações Pessoais</h2>
-                    <ul>
-                        <li>Solteita</li>
-                        <li>19 anos</li>
-                    </ul>
-                </section>
+                    <div class="fundo-laranja">
+                        <section>
+                            <h2>Informações Pessoais</h2>
+                            <ul>
+                                <li>Solteita</li>
+                                <li>19 Anos</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="fundo-laranja" style="background-color: rgb(212, 215, 219)">
+                        <section>
+                            <h2>Informações de contato</h2>
+                            <ul>
+                                <li>Telefone: 11 95913-5328</li>
+                                <li>Email: galvaogiovanna1812@gmail.com</li>
+                                <li>Rua Regente Feijó, 86 Embu das Artes-SP</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
             </div>
-            <div class="col-6">
-                <section>
-                    <h2>Informações de contato</h2>
-                    <ul>
-                        <li>Telefone: 11 95913-5328</li>
-                        <li>Email: galvaogiovanna1812@gmail.com</li>
-                        <li>Rua Regente Feijó, 86 Embu das Artes-SP</li>
-                    </ul>
-                </section>
-            </div>
-        </div>
         <table class="table table-hover table-striped">
             <thead>
                 <tr>
@@ -57,8 +64,43 @@
                 </tr>
             </tbody>
         </table>
+        <br>
+        <section class="content">
+            <h3>Formulário de Contato</h3>
+            <form class="form" method="POST">
+                <input type="text" class="field" name="nome" placeholder="Nome" /><br/>
+                <input type="text" class="field" name="email" placeholder="E-mail" /><br/>
+                <textarea class="field" name="mesage" placeholder="Digite sua mensagem"></textarea><br/>
+                <input class="field" type="button" value="Enviar" onclick="javascript:void(alert('Agradecemos o contato.\n\nEm breve responderemos à sua solicitação.'));">
+            </form>
+        </section>
+        <br/>
+        <div class="gallery autoplay items-3">
+            <div id="item-1" class="control-operator"></div>
+            <div id="item-2" class="control-operator"></div>
+            <div id="item-3" class="control-operator"></div>
+
+            <figure class="item">
+                <h1><img src="assets/imagens/TKD.jpg"></h1>
+            </figure>
+            
+            <figure class="item">
+                <h1><img src="assets/imagens/Ler.jpg"></h1>
+            </figure>
+            
+            <figure class="item">
+                <h1><img src="assets/imagens/Viagem.jpg"></h1>
+            </figure>
+
+            <div class="controls">
+                <a href="#item-1" class="control-button">.</a>
+                <a href="#item-2" class="control-button">.</a>
+                <a href="#item-3" class="control-button">.</a>
+
+            </div>
+        </div>
     </div>
 </body>
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="assets/script/bootstrap.bundle.min.js"></script>
 </html>
